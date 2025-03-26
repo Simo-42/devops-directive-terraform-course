@@ -1,2 +1,20 @@
-*.terraform*
-*.tfstate*
+# Dossiers Terraform
+.terraform/
+
+# Fichiers d'état (contiennent les détails de l'infra)
+*.tfstate
+*.tfstate.*
+
+# Fichiers de config sensibles (jamais à commit)
+*.tfvars
+*.tfvars.json
+terraform.tfvars
+terraform.tfvars.json
+
+# Fichiers de lock et crash
+.terraform.lock.hcl
+crash.log
+
+# Overrides locaux (non utilisés souvent mais à exclure)
+override.tf
+override.tf.json
